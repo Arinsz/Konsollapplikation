@@ -1,24 +1,24 @@
 # Konsollapplikation README
 
 Beskrivning
-Denna konsollapplikation är ett användarhanteringsverktyg som låter användare lägga till, ta bort, hämta och lista
-användare. Den erbjuder
-funktioner som att sortera användare efter namn eller ID och är utformad för enkel användning.
+Denna konsollapplikation Ã¤r ett anvÃ¤ndarhanteringsverktyg som lÃ¥ter anvÃ¤ndare lÃ¤gga till, ta bort, hÃ¤mta och lista
+anvÃ¤ndare. Den erbjuder
+funktioner som att sortera anvÃ¤ndare efter namn eller ID och Ã¤r utformad fÃ¶r enkel anvÃ¤ndning.
 
 ## Funktioner
 
-Lägg till nya användare med anpassade detaljer.
-Ta bort användare efter användarnamn eller ID.
-Hämta användarinformation efter ID.
-Lista alla användare sorterade efter namn eller ID.
+LÃ¤gg till nya anvÃ¤ndare med anpassade detaljer.
+Ta bort anvÃ¤ndare efter anvÃ¤ndarnamn eller ID.
+HÃ¤mta anvÃ¤ndarinformation efter ID.
+Lista alla anvÃ¤ndare sorterade efter namn eller ID.
 
-## Förutsättningar
+## FÃ¶rutsÃ¤ttningar
 
-Innan du kör denna applikation måste du se till att du har följande:
+Innan du kÃ¶r denna applikation mÃ¥ste du se till att du har fÃ¶ljande:
 
 Java Development Kit (JDK)
-Apache Maven (för att bygga projektet)
-Git (för versionshantering)
+Apache Maven (fÃ¶r att bygga projektet)
+Git (fÃ¶r versionshantering)
 
 ## Beroenden
 
@@ -26,68 +26,68 @@ JUnit - Version 4.13.1
 
 ## Installation (Linux/Ubuntu)
 
-![Skärmbild av min applikation](https://github.com/Arinsz/Konsollapplikation-Github/blob/35708b389f7db3d479ed2ff67d0d5a6956d579c7/KonsollAppLinux.jpg)
+![SkÃ¤rmbild av min applikation](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg)
 
-För att installera och köra denna konsollapplikation på ett Linux-baserat operativsystem, följ dessa steg:
+FÃ¶r att installera och kÃ¶ra denna konsollapplikation pÃ¥ ett Linux-baserat operativsystem, fÃ¶lj dessa steg:
 
-1. Klona projektet från förrådet:
+1. Klona projektet frÃ¥n fÃ¶rrÃ¥det:
 
    git clone https://github.com/Arinsz/Konsollapplikation-Github.git
 
 
-2. Navigera först till den mapp som innehåller dina Java-källkodsfiler: src\main\java\KonsollAppGroup
+2. Navigera fÃ¶rst till den mapp som innehÃ¥ller dina Java-kÃ¤llkodsfiler: src\main\java\KonsollAppGroup
 
 
 3. Kompilera din kod : javac *.java
 
-När koden har kompilerats framgångsrikt kan du navigera tillbaka till :
+NÃ¤r koden har kompilerats framgÃ¥ngsrikt kan du navigera tillbaka till :
 
 /KonsollAppProjekt/src/main/java
 
-4. Skriv :  java -cp . KonsollAppGroup.Main för att köra programmet.
+4. Skriv :  java -cp . KonsollAppGroup.Main fÃ¶r att kÃ¶ra programmet.
 
-### Användning
+### AnvÃ¤ndning
 
-När applikationen körs, följ anvisningarna på skärmen för att interagera med programmet. Till exempel:
+NÃ¤r applikationen kÃ¶rs, fÃ¶lj anvisningarna pÃ¥ skÃ¤rmen fÃ¶r att interagera med programmet. Till exempel:
 
-För att lägga till en användare, välj "add new user" genom att ange siffran 1 från menyn och följ anvisningarna.
-För att lista användare sorterade efter namn, välj "List all users sorted by name."
+FÃ¶r att lÃ¤gga till en anvÃ¤ndare, vÃ¤lj "add new user" genom att ange siffran 1 frÃ¥n menyn och fÃ¶lj anvisningarna.
+FÃ¶r att lista anvÃ¤ndare sorterade efter namn, vÃ¤lj "List all users sorted by name."
 Konfiguration
-Ingen specifik konfiguration krävs för denna applikation. Den använder en inbyggd databas för användardata.
+Ingen specifik konfiguration krÃ¤vs fÃ¶r denna applikation. Den anvÃ¤nder en inbyggd databas fÃ¶r anvÃ¤ndardata.
 
-#### Min objektorienterade analys och reflektion över principer för ren kod:
+#### Min objektorienterade analys och reflektion Ã¶ver principer fÃ¶r ren kod:
 
-Läsbarhet: Jag har försökt göra koden så läsbar som möjligt. Variabelnamn, funktionsnamn och klassnamn är klara och
-beskrivande. Kommentarer används för att förklara och göra det tydligt vad koden gör.
+LÃ¤sbarhet: Jag har fÃ¶rsÃ¶kt gÃ¶ra koden sÃ¥ lÃ¤sbar som mÃ¶jligt. Variabelnamn, funktionsnamn och klassnamn Ã¤r klara och
+beskrivande. Kommentarer anvÃ¤nds fÃ¶r att fÃ¶rklara och gÃ¶ra det tydligt vad koden gÃ¶r.
 
-Tydlighet: Koden är tydlig och följer en enkel struktur.
+Tydlighet: Koden Ã¤r tydlig och fÃ¶ljer en enkel struktur.
 
-DRY (Don't Repeat Yourself): Jag har försökt undvika kodupprepning så mycket som möjligt, till exempel genom att skapa
+DRY (Don't Repeat Yourself): Jag har fÃ¶rsÃ¶kt undvika kodupprepning sÃ¥ mycket som mÃ¶jligt, till exempel genom att skapa
 en inputhanterare.
 
-Single Responsibility Principle (SRP): Varje funktion, klass eller modul bör ha en enda uppgift. Detta är något jag har
-tänkt på och försökt följa när jag arbetade med projektet.
+Single Responsibility Principle (SRP): Varje funktion, klass eller modul bÃ¶r ha en enda uppgift. Detta Ã¤r nÃ¥got jag har
+tÃ¤nkt pÃ¥ och fÃ¶rsÃ¶kt fÃ¶lja nÃ¤r jag arbetade med projektet.
 
-Liskov Substitution Principle: För att följa LSP bör till exempel AdminUser vara en subtyp av User, vilket innebär att
-AdminUser är en specialisering av User.
+Liskov Substitution Principle: FÃ¶r att fÃ¶lja LSP bÃ¶r till exempel AdminUser vara en subtyp av User, vilket innebÃ¤r att
+AdminUser Ã¤r en specialisering av User.
 
-Dependency Inversion Principle: I min kod finns det potential att följa DIP, särskilt när jag tänker på principen under
-den vidare utvecklingen av denna applikation. Jag har skapat gränssnitt som UserList, InputHandler och User. Dessa
-gränssnitt är abstraktioner som kan användas för att minska beroenden mellan olika delar av min kod.
+Dependency Inversion Principle: I min kod finns det potential att fÃ¶lja DIP, sÃ¤rskilt nÃ¤r jag tÃ¤nker pÃ¥ principen under
+den vidare utvecklingen av denna applikation. Jag har skapat grÃ¤nssnitt som UserList, InputHandler och User. Dessa
+grÃ¤nssnitt Ã¤r abstraktioner som kan anvÃ¤ndas fÃ¶r att minska beroenden mellan olika delar av min kod.
 
-Testbarhet: Koden bör vara enkel att testa med enhetstester. Jag har inkluderat enhetstester som UserListTest och
-UserTest för att
+Testbarhet: Koden bÃ¶r vara enkel att testa med enhetstester. Jag har inkluderat enhetstester som UserListTest och
+UserTest fÃ¶r att
 testa specifika delar av min kod.
 
-KISS (Keep It Simple, Stupid): Att hålla koden så enkel som möjligt och undvika onödig komplexitet eller överdesign.
-Genom att använda inbyggda datastrukturer som TreeMap och HashMap utnyttjar jag befintlig funktionalitet istället för
-att skapa en egen komplex logik. Det gör koden mer läsbar och minskar risken för buggar som orsakas av felaktig
+KISS (Keep It Simple, Stupid): Att hÃ¥lla koden sÃ¥ enkel som mÃ¶jligt och undvika onÃ¶dig komplexitet eller Ã¶verdesign.
+Genom att anvÃ¤nda inbyggda datastrukturer som TreeMap och HashMap utnyttjar jag befintlig funktionalitet istÃ¤llet fÃ¶r
+att skapa en egen komplex logik. Det gÃ¶r koden mer lÃ¤sbar och minskar risken fÃ¶r buggar som orsakas av felaktig
 implementation.
 
-Robusthet och felhantering: Koden bör hantera fel och undantag på ett robust sätt. Det inkluderar att inte ignorera fel
-och tillhandahålla meningsfulla felmeddelanden. Jag har implementerat detta i metoderna och i huvudprogrammet.
+Robusthet och felhantering: Koden bÃ¶r hantera fel och undantag pÃ¥ ett robust sÃ¤tt. Det inkluderar att inte ignorera fel
+och tillhandahÃ¥lla meningsfulla felmeddelanden. Jag har implementerat detta i metoderna och i huvudprogrammet.
 
-Refaktorering: Jag har arbetat med att omstrukturera och förbättra koden utan att ändra dess externa beteende.
+Refaktorering: Jag har arbetat med att omstrukturera och fÃ¶rbÃ¤ttra koden utan att Ã¤ndra dess externa beteende.
 
-Dokumentation: Koden bör vara väl kommenterad, och i varje klass beskriver jag vad klassen gör och lagt till kommentarer
-där jag anser att det är nödvändigt.
+Dokumentation: Koden bÃ¶r vara vÃ¤l kommenterad, och i varje klass beskriver jag vad klassen gÃ¶r och lagt till kommentarer
+dÃ¤r jag anser att det Ã¤r nÃ¶dvÃ¤ndigt.
