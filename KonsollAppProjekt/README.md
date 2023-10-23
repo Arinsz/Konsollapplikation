@@ -53,7 +53,7 @@ När applikationen körs, följ anvisningarna på skärmen för att interagera med pro
 
 För att lägga till en användare, välj "add new user" genom att ange siffran 1 från menyn och följ anvisningarna.
 För att lista användare sorterade efter namn, välj "List all users sorted by name."
-Konfiguration
+
 Ingen specifik konfiguration krävs för denna applikation. Den använder en inbyggd databas för användardata.
 
 #### Min objektorienterade analys och reflektion över principer för ren kod:
