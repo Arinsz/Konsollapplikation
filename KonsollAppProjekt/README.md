@@ -1,16 +1,10 @@
 # Konsollapplikation README
 
 # Beskrivning
-<<<<<<< HEAD
 
-Denna konsollapplikation �r ett anv�ndarhanteringsverktyg som l�ter anv�ndare l�gga till, ta bort, h�mta och lista
-anv�ndare. Den erbjuder
-funktioner som att sortera anv�ndare efter namn eller ID och �r utformad f�r enkel anv�ndning.
-=======
 Denna konsollapplikation är ett användarhanteringsverktyg som låter användare lägga till, ta bort, hämta och lista
 användare. Den erbjuder
 funktioner som att sortera användare efter namn eller ID och är utformad för enkel användning.
->>>>>>> c0815abd2535494b7bfa66fbedc97529880df23c
 
 ## Funktioner
 
@@ -33,17 +27,13 @@ JUnit - Version 4.13.1
 
 ## Installation (Linux/Ubuntu)
 
-<<<<<<< HEAD
-![Sk�rmbild av min applikation i linux milj�](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg
-=======
-![Skärmbild av min applikation](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg)
->>>>>>> c0815abd2535494b7bfa66fbedc97529880df23c
+![Skärmbild av min applikation i linux miljö](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg
 
 För att installera och köra denna konsollapplikation på ett Linux-baserat operativsystem, följ dessa steg:
 
 1. Klona projektet från förrådet:
 
-   git clone https://github.com/Arinsz/Konsollapplikation-Github.git
+   git clone https://github.com/Arinsz/Konsollapplikation/tree/main/KonsollAppProjekt
 
 
 2. Navigera först till den mapp som innehåller dina Java-källkodsfiler: src\main\java\KonsollAppGroup
@@ -61,17 +51,10 @@ När koden har kompilerats framgångsrikt kan du navigera tillbaka till :
 
 När applikationen körs, följ anvisningarna på skärmen för att interagera med programmet. Till exempel:
 
-<<<<<<< HEAD
-F�r att l�gga till en anv�ndare, v�lj "add new user" genom att ange siffran 1 fr�n menyn och f�lj anvisningarna.
-F�r att lista anv�ndare sorterade efter namn, v�lj "List all users sorted by name."
-
-Ingen specifik konfiguration kr�vs f�r denna applikation. Den anv�nder en inbyggd databas f�r anv�ndardata.
-=======
 För att lägga till en användare, välj "add new user" genom att ange siffran 1 från menyn och följ anvisningarna.
 För att lista användare sorterade efter namn, välj "List all users sorted by name."
-Konfiguration
+
 Ingen specifik konfiguration krävs för denna applikation. Den använder en inbyggd databas för användardata.
->>>>>>> c0815abd2535494b7bfa66fbedc97529880df23c
 
 #### Min objektorienterade analys och reflektion över principer för ren kod:
 
