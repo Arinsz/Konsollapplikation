@@ -1,6 +1,7 @@
 # Konsollapplikation README
 
-Beskrivning
+# Beskrivning
+
 Denna konsollapplikation är ett användarhanteringsverktyg som låter användare lägga till, ta bort, hämta och lista
 användare. Den erbjuder
 funktioner som att sortera användare efter namn eller ID och är utformad för enkel användning.
@@ -26,7 +27,7 @@ JUnit - Version 4.13.1
 
 ## Installation (Linux/Ubuntu)
 
-![Skärmbild av min applikation](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg)
+![Skärmbild av min applikation i linux miljö](https://github.com/Arinsz/Konsollapplikation/raw/main/KonsollAppLinux.jpg
 
 För att installera och köra denna konsollapplikation på ett Linux-baserat operativsystem, följ dessa steg:
 
