@@ -32,7 +32,7 @@ För att installera och köra denna konsollapplikation på ett Linux-baserat ope
 
 1. Klona projektet från förrådet:
 
-   git clone https://github.com/Arinsz/Konsollapplikation-Github.git
+   git clone https://github.com/Arinsz/Konsollapplikation/tree/main/KonsollAppProjekt
 
 
 2. Navigera först till den mapp som innehåller dina Java-källkodsfiler: src\main\java\KonsollAppGroup
