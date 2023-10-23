@@ -26,7 +26,7 @@ JUnit - Version 4.13.1
 
 ## Installation (Linux/Ubuntu)
 
-![Skärmbild av min applikation](https://github.com/Arinsz/Konsollapplikation-Github/blob/35708b389f7db3d479ed2ff67d0d5a6956d579c7/KonsollAppLinux.jpg)
+![Skärmbild av min applikation](https://github.com/Arinsz/Konsollapplikation/blob/379093071e198ab7652b62982d4564147f571969/KonsollAppLinux.jpg)
 
 För att installera och köra denna konsollapplikation på ett Linux-baserat operativsystem, följ dessa steg:
 
