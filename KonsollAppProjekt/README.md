@@ -90,5 +90,4 @@ och tillhandahålla meningsfulla felmeddelanden. Jag har implementerat detta i m
 
 Refaktorering: Jag har arbetat med att omstrukturera och förbättra koden utan att ändra dess externa beteende.
 
-Dokumentation: Koden bör vara väl kommenterad, och i varje klass beskriver jag vad klassen gör och lagt till kommentarer
-där jag anser att det är nödvändigt.
+Dokumentation: Koden är bra kommenterad och lätt att följa, och i varje klass beskriver jag vad klassen gör.
