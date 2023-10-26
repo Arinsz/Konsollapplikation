@@ -3,7 +3,6 @@ package KonsollAppGroup;
 import java.util.Scanner;
 
 /**
- * ____________________________________________________________________________________________________________________
  * Klassen InputHandler hanterar användarinmatning från konsolen. Den erbjuder metoder för att läsa heltal och strängar
  * med validering av längd och tomma strängar.
  */
@@ -13,7 +12,6 @@ public class InputHandler {
     private final Scanner scanner;
 
     /**
-     * _______________________________________________________________________________________________
      * Konstruktören skapar en Scanner som används för att läsa inmatning från användaren via konsolen.
      */
 
@@ -24,7 +22,6 @@ public class InputHandler {
     }
 
     /**
-     * ______________________________________________________________________________________________________________
      * Läser ett heltal från användaren och returnerar det. Om användaren inte anger ett heltal, upprepas inmatningen.
      */
     public int readIntInput() {
@@ -45,7 +42,6 @@ public class InputHandler {
     }
 
     /**
-     * ______________________________________________________________________________________________________
      * Läser en sträng från användaren och returnerar den efter att ha kontrollerat längden och om den är tom.
      * Om strängen är tom eller inte ligger inom angivna längdgränser, upprepas inmatningen.
      *
