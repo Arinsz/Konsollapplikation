@@ -137,7 +137,6 @@ public class UserList {
 
           
             userMapByUserName.remove(userToRemove.getUserName());
-
             userMapByUserId.remove(userToRemove.getUserId());
 
             System.out.println("User has been removed");
