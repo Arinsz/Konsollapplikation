@@ -11,9 +11,7 @@ public class InputHandler {
 
     private final Scanner scanner;
 
-    /**
-     * Konstruktören skapar en Scanner som används för att läsa inmatning från användaren via konsolen.
-     */
+ 
 
     public InputHandler() {
 
@@ -30,12 +28,12 @@ public class InputHandler {
 
             try {
 
-                // Försök att tolka inmatningen som ett heltal.
+                
                 return Integer.parseInt(scanner.nextLine());
 
             } catch (NumberFormatException e) {
 
-                // Om ett NumberFormatException kastas (inmatningen är inte ett giltigt heltal), visa ett felmeddelande.
+               
                 System.out.println("Invalid input.");
             }
         }
@@ -54,12 +52,11 @@ public class InputHandler {
 
             String input = scanner.nextLine().trim();
 
-            // Kontrollera om inmatningen är tom och kasta ett undantag om så är fallet.
+           
             if (input.isEmpty()) {
 
                 throw new IllegalArgumentException("Input must not be empty. ");
 
-                // Kontrollera om längden på inmatningen inte stämmer, kasta ett undantag om så är fallet.
             } else if (input.length() < minLength || input.length() > maxLength) {
 
                 throw new IllegalArgumentException("Input must be between " + minLength + " and " + maxLength + " characters.");
