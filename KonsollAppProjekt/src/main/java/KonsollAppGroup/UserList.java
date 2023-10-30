@@ -25,24 +25,23 @@ public class UserList {
 
     public void addUser(User user) {
 
-        // Hämtar användarnamn och ID från den givna användaren.
+      
         String userName = user.getUserName();
         int userId = user.getUserId();
 
         try {
 
-            // Kontrollerar om användarnamnet redan finns i listan med användarnamn.
+         
             if (userMapByUserName.containsKey(userName)) {
 
                 throw new IllegalStateException(" Username: " + userName + " already exists, please try again.");
 
-                // Annars, om ID redan finns i listan med användarnas-ID.
             } else if (userMapByUserId.containsKey(userId)) {
 
                 throw new IllegalStateException(" User with ID: " + userId + " already exists, please try again.");
 
             } else {
-                // Om användarnamnet och ID inte redan finns i listan, läggs användaren till i båda listorna.
+              
                 userMapByUserName.put(userName, user);
                 userMapByUserId.put(userId, user);
 
@@ -53,7 +52,7 @@ public class UserList {
 
         } catch (IllegalStateException e) {
 
-            // Om det uppstår ett undantag, skriv ut ett felmeddelande.
+       
 
             System.out.println("Error" + e.getMessage());
         }
@@ -70,18 +69,16 @@ public class UserList {
 
     public void initializeUser(User user) {
 
-        // Hämtar användarnamn och ID från den givna användaren.
+        
         String userName = user.getUserName();
         int userId = user.getUserId();
 
         try {
 
-            // Kontrollerar om användarnamnet redan finns i listan med användarnamn.
             if (userMapByUserName.containsKey(userName)) {
 
                 throw new IllegalStateException("Username: " + userName + " already exists.");
 
-                // Annars, om ID redan finns i listan med ID
             } else if (userMapByUserId.containsKey(userId)) {
 
                 throw new IllegalStateException("User with ID: " + userId + " already exists.");
@@ -89,7 +86,6 @@ public class UserList {
 
             } else {
 
-                // Om användarnamnet och ID inte redan finns i listan, läggs användaren till i båda listorna.
                 userMapByUserName.put(userName, user);
                 userMapByUserId.put(userId, user);
 
@@ -102,7 +98,6 @@ public class UserList {
 
         } catch (IllegalStateException e) {
 
-            // Om det uppstår ett undantag, skriv ut ett felmeddelande.
 
             System.out.println("Error" + e.getMessage());
 
@@ -122,27 +117,25 @@ public class UserList {
 
     public boolean removeUserByNameOrId(String userName, int id) {
 
-        // Skapar en användarreferens för att lagra användaren som ska tas bort.
+   
         User userToRemove = null;
 
 
         if (userName != null && userMapByUserName.containsKey(userName)) {
 
-            // Om användaren hittas, sätts userToRemove att vara användaren med det angivna användarnamnet.
             userToRemove = userMapByUserName.get(userName);
 
 
         } else if (id > 0 && userMapByUserId.containsKey(id)) {
 
-            // Om användaren hittas, sätts userToRemove att vara användaren med det angivna ID:t.
             userToRemove = userMapByUserId.get(id);
 
         }
 
-        // Kontrollerar om userToRemove innehåller en användare.
+      
         if (userToRemove != null) {
 
-            // Om användaren finns, tas användaren bort från listan både efter användarnamn och ID.
+          
             userMapByUserName.remove(userToRemove.getUserName());
 
             userMapByUserId.remove(userToRemove.getUserId());
@@ -192,10 +185,10 @@ public class UserList {
         int n = userList.size();
         boolean swapped;
 
-        // Yttre loop: Itererar från första elementet till näst sista elementet.
+   
         for (int i = 0; i < n - 1; i++) {
             swapped = false;
-            // Inre loop: Jämför intilliggande element och byter plats om det behövs.
+          
             for (int j = 0; j < n - i - 1; j++) {
                 if (userList.get(j).getUserId() > userList.get(j + 1).getUserId()) {
 
@@ -212,7 +205,7 @@ public class UserList {
             }
         }
 
-        // Skriv ut den sorterade listan av användare
+     
         System.out.println("***** UserList *****");
         for (User user : userList) {
 
