@@ -13,8 +13,8 @@ public class AdminUser extends User {
 
     public AdminUser(String userName, String userEmail, int userId) {
         super(userName, userEmail, userId);
-        this.isAdmin = true;   // Sätter standardvärdet för isAdmin till sant.
-        this.adminPassword = null; // Sätter standardvärdet för adminlösenordet till null.
+        this.isAdmin = true;   
+        this.adminPassword = null; 
     }
 
 
