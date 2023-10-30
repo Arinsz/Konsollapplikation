@@ -15,7 +15,7 @@ package KonsollAppGroup;
 public class Main {
     public static void main(String[] args) {
 
-        // Skapar en UserList och en InputHandler för att hantera användare och användarinmatning.
+       
         UserList initializedUserList = initializeUserList();
         InputHandler inputHandler = new InputHandler();
 
@@ -27,8 +27,8 @@ public class Main {
                 System.out.println("1. Add new user");
                 System.out.println("2. Remove user");
                 System.out.println("3. Get user-information");
-                System.out.println("4. List all users sorted by name");  // Treemap sköter sorteringen.
-                System.out.println("5. List all users sorted by ID"); // Använder BubbleSort-metoden för att sortera ID.
+                System.out.println("4. List all users sorted by name");  
+                System.out.println("5. List all users sorted by ID"); 
                 System.out.println("6. Exit");
                 System.out.print("Enter your choice with a number from 1-6: ");
 
@@ -40,7 +40,7 @@ public class Main {
 
                     case 1:
 
-                        // Initiera indata-variabler med standardvärden.
+                     
                         String newUsername = null;
                         String newEmail = null;
                         int newId = -1;
@@ -58,7 +58,7 @@ public class Main {
                                 System.out.println("Enter new ID (a positive integer):");
                                 newId = inputHandler.readIntInput();
 
-                                // Indata-validering.
+                             
                                 if (!newUsername.isEmpty() &&
                                         newEmail.length() >= 5 &&
                                         newEmail.contains("@") &&
@@ -74,14 +74,12 @@ public class Main {
                             }
                         }
 
-                        // Skapa ett nytt User-objekt med den angivna användarinformationen.
                         User user = new User(newUsername, newEmail, newId);
 
                         try {
-                            // Försök att lägga till användaren i listan.
+                        
                             initializedUserList.addUser(user);
 
-                            // printar ett meddelande om det misslyckas att lägga till en användare.
                         } catch (IllegalStateException e) {
                             System.out.println("Error: " + e.getMessage());
                             System.out.println("Please try again.");
@@ -94,19 +92,19 @@ public class Main {
                         System.out.println("Enter Username or ID on the user you want to remove");
                         String userToRemove = inputHandler.readStringInput(1, 20);
 
-                        // Håll reda på om användaren togs bort.
+                    
                         boolean userRemoved = false;
 
 
                         try {
-                            // Försök att tolka användarinmatningen som ett heltal (ID)
+                          
                             int userId = Integer.parseInt(userToRemove);
 
-                            // Försök ta bort med userId, sätter username som null.
+                           
                             userRemoved = initializedUserList.removeUserByNameOrId(null, userId);
                         } catch (NumberFormatException e) {
 
-                            //Catch försök ta bort med username, därför är id -1.
+                           
                             userRemoved = initializedUserList.removeUserByNameOrId(userToRemove, -1);
 
                         }
@@ -140,14 +138,14 @@ public class Main {
 
                     case 4:
 
-                        // Skriv ut UserList sorterad efter namn.
+                    
                         System.out.println(initializedUserList);
 
                         break;
 
                     case 5:
 
-                        // Skriv ut UserList sorterad efter ID.
+                      
                         initializedUserList.bubbleSortUsersByID();
                         break;
 
@@ -169,21 +167,19 @@ public class Main {
 
     }
 
-    // Initierar en Admin och lägger till den i UserList.
-    // Initierar en UserList och returnerar den.
+
 
     public static UserList initializeUserList() {
 
-        // Registrera starttiden
+   
         long startTime = System.currentTimeMillis();
 
-        // Skapa en instans av UserList.
+      
         UserList userList = new UserList();
 
-        // Skapa en ny AdminUser.
+      
         AdminUser adminUser = new AdminUser("Admin", "Admin@hotmail.com", 137);
 
-        // Anropa metoden setAdmin, sätter den på true och skapar ett lösenord.
         adminUser.setAdmin(true, "Jensen");
 
 
@@ -198,7 +194,7 @@ public class Main {
         userList.initializeUser(new User("Lars", "Lars@gmail.com", 101));
 
 
-        // Registrera sluttiden
+        
         long endTime = System.currentTimeMillis();
         long elapsedTime = endTime - startTime;
 
