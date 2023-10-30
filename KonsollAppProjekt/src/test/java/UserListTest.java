@@ -47,7 +47,7 @@ public class UserListTest {
         try {
 
             User retrievedUser = userList.getUserbyId(207);
-            // Jämför den hämtade användaren med den nyligen tillagda användaren för att bekräfta att de är samma.
+           
             assertEquals(newUser, retrievedUser);
         } catch (UserPrincipalNotFoundException e) {
             fail("getUserbyID kastade ett undantag: " + e.getMessage());
@@ -66,19 +66,18 @@ public class UserListTest {
         userList.initializeUser(new User("UserB", "userb@example.com", 11));
         userList.initializeUser(new User("UserC", "userc@example.com", 8));
 
-        // Anropa sorteringsmetoden
         userList.bubbleSortUsersByID();
 
-        // Initialisera prevUser till null för första iterationen.
+
         User prevUser = null;
 
         for (User user : userList.getUserMapByUserId().values()) {
             if (prevUser != null) {
-                // Se till att den nuvarande användarens ID är större än eller lika med den tidigare användarens ID
+              
                 assertTrue(user.getUserId() >= prevUser.getUserId());
             }
 
-            // Uppdatera prevUser för nästa iteration.
+       
             prevUser = user;
         }
     }
@@ -90,10 +89,10 @@ public class UserListTest {
     @Test
     public void testRemoveUserByNameOrId() {
 
-        // Försök ta bort användaren Arin med korrekt användarnamn men fel ID.
+ 
         userList.removeUserByNameOrId("Arin", 201);
 
-        // Arin bör tas bort om användarnamnet är korrekt, och listan bör innehålla 2 användare.
+      
         assertEquals(2, userList.getUserMapByUserId().size());
     }
 }
