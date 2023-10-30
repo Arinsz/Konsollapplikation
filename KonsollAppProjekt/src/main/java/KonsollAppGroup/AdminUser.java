@@ -31,11 +31,10 @@ public class AdminUser extends User {
         if (password != null && !password.isEmpty()) {
 
             this.isAdmin = isAdmin;
-
             this.adminPassword = password;
 
         } else {
-
+            
             throw new IllegalArgumentException("Please enter a password");
         }
     }
