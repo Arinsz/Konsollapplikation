@@ -28,7 +28,6 @@ public class InputHandler {
 
             try {
 
-                
                 return Integer.parseInt(scanner.nextLine());
 
             } catch (NumberFormatException e) {
